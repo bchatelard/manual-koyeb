@@ -2,7 +2,7 @@ functions:
   - name: custom-image
     image: {{image}}
     command: ["bash", "-c"]
-    args: ["echo 'Hello from $DOCKER_IMAGE'"]
+    args: ["echo 'Hello from' $DOCKER_IMAGE"]
     image_registry_secret: docker-secret
     env:
       DOCKER_IMAGE: {{image}}
