@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install koyeb cli
-        uses: koyeb-community/install-koyeb-cli@main
+        uses: koyeb-community/install-koyeb-cli@v1
         with:
           api_key: "${{ secrets.KOYEB_TOKEN }}"
       - name: Login to docker
