@@ -12,7 +12,7 @@ jobs:
 
     env:
       STACK_NAME: okay-division
-      IMAGE: bchatelard/abc:${{github.tag}}
+      IMAGE: bchatelard/abc:${{github.sha}}
 
     steps:
       - uses: actions/checkout@v2
