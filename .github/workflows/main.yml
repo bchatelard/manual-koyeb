@@ -28,6 +28,6 @@ jobs:
         run: docker push $IMAGE
       - name: Generate koyeb.yaml from template
         run: |
-          sed "s/{{image}}/$IMAGE/" koyeb.yaml.tpl > koyeb.yaml
+          sed "s|{{image}}|$IMAGE|g" koyeb.yaml.tpl > koyeb.yaml
       - name: Update new revision
         run: koyeb create revision $STACK_NAME -f koyeb.yaml
