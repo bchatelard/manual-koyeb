@@ -1,1 +1,1 @@
-FROM bchatelard/debug
+FROM ubuntu
